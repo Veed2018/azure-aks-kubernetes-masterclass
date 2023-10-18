@@ -64,10 +64,10 @@ docker images kube-nginx-acr:v1
 ## Step-03: Run Docker Container locally and test
 ```
 # Run locally and Test
-docker run --name kube-nginx-acr --rm -p 80:80 -d kube-nginx-acr:v1
+docker run --name kube-nginx-acr --rm -p 8000:80 -d kube-nginx-acr:v1
 
 # Access Application locally
-http://localhost
+http://localhost:8000
 
 # Stop Docker Image
 docker stop kube-nginx-acr
